@@ -32,6 +32,20 @@ nav {
     font-size: 1.5rem;
 }
 
+/* Originally I defaulted to using discrete classes,
+but realized I could alternatively use the <a> children
+of the nav element instead, so opted for that
+
+.nav-link {
+    color: var(--main-font-color);
+}
+*/
+
+ nav a {
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+
 #welcome-section {
     display: flex;
     flex-direction: column;
@@ -62,10 +76,28 @@ h3 {
     text-align: center;
     color: var(--main-font-color);
     font-size: 1.5rem;
+    padding-top: 50px;
+}
+
+.project-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 25px;
 }
 
 .project-image {
     min-height: 150px;
     min-width: 150px;
     border: 1px solid red;
+    margin: 5px;
+}
+
+.github-link {
+    color: var(--action-color);
+    text-decoration: none;
+}
+
+.projects-text {
+    
 }

@@ -54,5 +54,13 @@ h3 {
     font-style: italic;
 }
 
-
+#projects {
+    background-color: var(--secondary-background);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--main-font-color);
+    font-size: 1.5rem;
+}
 

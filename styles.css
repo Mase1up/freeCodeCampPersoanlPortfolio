@@ -60,9 +60,11 @@ of the nav element instead, so opted for that
 
 h1 {
     font-size: 3rem;
+    color: var(--main-font-color);
+    text-align: center;
 }
 
-h3 {
+.welcome-text h3 {
     color: var(--action-color);
     font-weight: normal;
     font-style: italic;
@@ -103,6 +105,44 @@ h3 {
 
 .projects-text {
     
+}
+
+#contact {
+    height: 100vh;
+    background-color: var(--main-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contact-text h3 {
+    color: var(--main-font-color);
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    color: var(--main-font-color);
+}
+
+.link-item {
+    margin: 5px;
+}
+
+
+/* I need to figure out why moving this down 
+with margin, screws up my layout */
+.line {
+    height: 3px;
+    width: 100vw;
+    background-color: var(--action-color);
+
 }
 
 /* I think I need to use min-width instead? */

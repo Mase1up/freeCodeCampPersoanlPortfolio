@@ -135,6 +135,11 @@ h1 {
     margin: 5px;
 }
 
+#profile-link {
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+
 
 /* I need to figure out why moving this down 
 with margin, screws up my layout */

@@ -83,14 +83,17 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin: 50px 25px;
 }
 
 .project-image {
+    margin: 5px;
     min-height: 150px;
     min-width: 150px;
+    max-height: 300px;
+    max-width: 300px;
     border: 1px solid red;
-    margin: 5px;
 }
 
 .github-link {
@@ -100,4 +103,27 @@ h3 {
 
 .projects-text {
     
+}
+
+/* I think I need to use min-width instead? */
+/* Nope, this works:
+>700px, 3 columns
+530 < x < 700, 2 columns
+<= 370, 1 column */
+
+@media (max-width: 700px) {
+    #projects {
+        background-color: green;
+    }
+}
+
+@media (max-width: 530px) {
+    #projects {
+        background-color: yellow;
+}
+
+@media (max-width: 370px) {
+    #projects {
+        background-color: black;
+    }
 }
